@@ -22,6 +22,7 @@ def display_intro():
 
     with col_right:
         image_path = "https://raw.githubusercontent.com/Samuelchazy/Educative.io/0d5526803b4f9993b069d3c4460fe3caf69e553e/images/toyota_logo.png"
+        # print(st.image_path)
         st.image(image_path, use_container_width=True)
 
     ###################################### section 2 => Image & Video #######################################
