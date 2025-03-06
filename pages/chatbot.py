@@ -3,10 +3,10 @@ from src.load_file import load_file
 from src.rewrite_query import rewrite_user_query
 from src.retriever import build_vector_store, retrieve_chunks_from_vector_store, retrieve_history
 from src.generator import generate_answer
-
+import os
 
 # Load the user manuel file
-pdf_file_path = "/Users/xue/Documents/workspace/AI_projects/ToyotaManualAiService/src/Toyota-Highlander.pdf"
+pdf_file_path = os.environ.get("TOYOTA_MANUAL_PATH")
 
 print(f"Trying to open file at: {pdf_file_path}")
 user_manuel_content = load_file(pdf_file_path)
